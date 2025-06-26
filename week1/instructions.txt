@@ -1,0 +1,8 @@
+# compile C program and run
+gcc hello.c -o hello && ./hello
+
+# compile CUDA program and run
+nvcc hello_cuda.cu -o hello_cuda.exe
+
+# compile OpenMP program and run
+gcc -fopenmp hello_openmp.c -o hello_openmp && ./hello_openmp
